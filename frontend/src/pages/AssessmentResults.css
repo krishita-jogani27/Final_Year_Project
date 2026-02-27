@@ -1,0 +1,527 @@
+.results-page {
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 3rem 2rem;
+}
+
+.results-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.results-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    animation: fadeInDown 0.6s ease-out;
+}
+
+.success-icon {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    animation: bounce 2s infinite;
+}
+
+.results-header h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.results-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Strengths Section */
+.strengths-section {
+    margin-bottom: 3rem;
+    animation: fadeIn 0.8s ease-out 0.2s backwards;
+}
+
+.strengths-section h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+}
+
+.strengths-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.strength-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.strength-card:hover {
+    transform: translateY(-5px);
+}
+
+.strength-rank {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.strength-card h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.strength-bar {
+    height: 12px;
+    background: #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.strength-fill {
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 6px;
+    transition: width 0.5s ease;
+}
+
+.strength-score {
+    color: #667eea;
+    font-weight: 700;
+}
+
+/* Personality Section */
+.personality-section {
+    margin-bottom: 3rem;
+    animation: fadeIn 0.8s ease-out 0.4s backwards;
+}
+
+.personality-section h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+}
+
+.personality-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.personality-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.personality-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.personality-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.personality-value {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #667eea;
+}
+
+/* Recommendations Section */
+.recommendations-section {
+    margin-bottom: 3rem;
+    animation: fadeIn 0.8s ease-out 0.6s backwards;
+}
+
+.recommendations-section h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.recommendations-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.recommendation-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.rec-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.rec-rank {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rank-number {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.match-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.personality-badge {
+    background: #10b981;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.recommendation-card h3 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 0.8rem;
+}
+
+.rec-description {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.rec-details {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+.detail-row:last-child {
+    margin-bottom: 0;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #666;
+}
+
+.detail-value {
+    font-weight: 800;
+    color: #1a1a1a;
+}
+
+.rec-section {
+    margin-bottom: 1.5rem;
+}
+
+.rec-section h4 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 0.8rem;
+}
+
+.course-tags,
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.course-tag,
+.skill-tag {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.career-list {
+    list-style: none;
+    padding: 0;
+}
+
+.career-list li {
+    padding: 0.5rem 0;
+    color: #666;
+    font-weight: 600;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.career-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: 900;
+}
+
+.btn-explore-courses {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn-explore-courses:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Comparison Table */
+.comparison-section {
+    margin-bottom: 3rem;
+    animation: fadeIn 0.8s ease-out 0.8s backwards;
+}
+
+.comparison-section h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+}
+
+.comparison-table-container {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.comparison-table th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.comparison-table th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.comparison-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    color: #666;
+    font-weight: 600;
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.path-name {
+    font-weight: 800;
+    color: #1a1a1a;
+}
+
+.match-percentage {
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.skills-cell {
+    font-size: 0.9rem;
+}
+
+/* Actions */
+.results-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    animation: fadeIn 0.8s ease-out 1s backwards;
+}
+
+.btn-retake,
+.btn-browse {
+    padding: 1rem 2.5rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-retake {
+    background: white;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.btn-retake:hover {
+    background: #667eea;
+    color: white;
+}
+
+.btn-browse {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-browse:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .results-header h1 {
+        font-size: 2rem;
+    }
+
+    .strengths-grid,
+    .personality-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendation-card {
+        padding: 1.5rem;
+    }
+
+    .results-actions {
+        flex-direction: column;
+    }
+
+    .btn-retake,
+    .btn-browse {
+        width: 100%;
+    }
+
+    .comparison-table-container {
+        padding: 1rem;
+    }
+
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.75rem 0.5rem;
+    }
+}
