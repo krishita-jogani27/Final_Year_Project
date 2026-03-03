@@ -7,7 +7,7 @@ const { checkPasswordStrength } = require('../middleware/validation');
 // @access  Public
 const register = async (req, res) => {
     try {
-        const { username, email, password, full_name } = req.body;``
+        const { username, email, password, full_name, education_level } = req.body;
 
         // Check if user already exists
         const userExistsByEmail = await User.findByEmail(email);
@@ -37,7 +37,7 @@ const register = async (req, res) => {
         }
 
         // Create user
-        const userId = await User.create({ username, email, password, full_name });
+        const userId = await User.create({ username, email, password, full_name, education_level: education_level || '12th' });
 
         // Generate token
         const token = generateToken(userId);
@@ -50,6 +50,7 @@ const register = async (req, res) => {
                 username,
                 email,
                 full_name,
+                education_level: education_level || '12th',
                 token
             }
         });
@@ -99,6 +100,7 @@ const login = async (req, res) => {
                 username: user.username,
                 email: user.email,
                 full_name: user.full_name,
+                education_level: user.education_level,
                 token
             }
         });

@@ -26,6 +26,11 @@ app.use((req, res, next) => {
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/courses', require('./routes/courses'));
+app.use('/api/quiz', require('./routes/quiz'));
+app.use('/api/recommendations', require('./routes/recommendations'));
+app.use('/api/career', require('./routes/career'));
+app.use('/api/colleges', require('./routes/colleges'));
+app.use('/api/notifications', require('./routes/notifications'));
 
 // Health check route
 app.get('/api/health', (req, res) => {
@@ -45,6 +50,11 @@ app.get('/', (req, res) => {
         endpoints: {
             auth: '/api/auth',
             courses: '/api/courses',
+            quiz: '/api/quiz',
+            recommendations: '/api/recommendations',
+            career: '/api/career',
+            colleges: '/api/colleges',
+            notifications: '/api/notifications',
             health: '/api/health'
         }
     });
@@ -87,6 +97,8 @@ const startServer = async () => {
             console.log(`   - POST /api/auth/login`);
             console.log(`   - GET  /api/courses`);
             console.log(`   - POST /api/courses/enroll`);
+            console.log(`   - GET  /api/quiz/start`);
+            console.log(`   - POST /api/recommendations/generate`);
             console.log(`\n💡 Press Ctrl+C to stop the server\n`);
         });
     } catch (error) {

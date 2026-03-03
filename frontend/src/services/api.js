@@ -6,7 +6,7 @@ import { mockAuthAPI, mockCourseAPI } from './mockApi';
 // ========================================
 // Set to 'mock' for frontend-only testing
 // Set to 'real' when backend is running
-const API_MODE = 'mock'; // Change to 'real' when backend is ready
+const API_MODE = 'real'; // Changed back to 'real' since backend is successfully running
 
 // ========================================
 // REAL API (Backend Required)

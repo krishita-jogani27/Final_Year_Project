@@ -9,6 +9,10 @@ import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Assessment from './pages/Assessment';
 import AssessmentResults from './pages/AssessmentResults';
+import AptitudeTest from './pages/AptitudeTest';
+import AptitudeResults from './pages/AptitudeResults';
+import CareerAdvisor from './pages/CareerAdvisor';
+import CollegeDirectory from './pages/CollegeDirectory';
 import './App.css';
 
 function App() {
@@ -25,6 +29,10 @@ function App() {
                         <Route path="/dashboard" element={<Dashboard />} />
                         <Route path="/assessment" element={<Assessment />} />
                         <Route path="/assessment-results" element={<AssessmentResults />} />
+                        <Route path="/aptitude-test" element={<AptitudeTest />} />
+                        <Route path="/aptitude-results" element={<AptitudeResults />} />
+                        <Route path="/career-advisor" element={<CareerAdvisor />} />
+                        <Route path="/colleges" element={<CollegeDirectory />} />
                     </Routes>
                     <Toaster
                         position="top-right"

@@ -1,3 +1,4 @@
+/* eslint-disable no-throw-literal */
 // Mock API for testing frontend without backend
 // Simulates API responses with fake data
 

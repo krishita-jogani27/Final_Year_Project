@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import NotificationDropdown from './NotificationDropdown';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -17,11 +18,13 @@ const Navbar = () => {
                 <div className="navbar-menu">
                     <Link to="/" className="nav-link">Home</Link>
                     <Link to="/courses" className="nav-link">Courses</Link>
-                    <Link to="/assessment" className="nav-link">Career Assessment</Link>
+                    <Link to="/aptitude-test" className="nav-link">Aptitude Test</Link>
+                    <Link to="/colleges" className="nav-link">College Directory</Link>
 
                     {isAuthenticated ? (
                         <>
                             <Link to="/dashboard" className="nav-link">My Courses</Link>
+                            <NotificationDropdown />
                             <div className="user-menu">
                                 <span className="user-name">👋 {user?.username}</span>
                                 <button onClick={logout} className="btn-logout">

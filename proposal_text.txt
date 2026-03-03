@@ -1,0 +1,296 @@
+Project-I Proposal Report
+On
+One-Stop Personalized Career & Education Advisor
+Submitted By:
+Krishita Jogani – 22EJICS076
+Yash Bhandari – 22EJICS164
+Submitted To: Prof. Jaya Raj Sharma
+Department of Computer Science & Engineering
+In partial fulfillment of requirement for the degree of
+Bachelor of Technology
+Jodhpur Institute of Engineering & Technology
+(An Autonomous Institution affiliated with Bikaner Technical University, Bikaner)
+Date of Submission:
+December 26, 2025
+Contents
+1 Introduction 1
+2 Problem Statement 3
+2.1 Project Objectives . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.2 Project Scope . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+3 Literature Survey 6
+3.1 User Survey Analysis (Google Form Responses) . . . . . . . . . . . . . . . . . . . . . . 6
+4 Methodology 11
+4.1 Requirement Analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+4.2 System Design . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+4.3 Content and Data Preparation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+4.4 Aptitude Assessment and Recommendation Development . . . . . . . . . . . . . . . . . 12
+4.5 Course-to-Career Mapping and Visualization . . . . . . . . . . . . . . . . . . . . . . . . 13
+4.6 Timeline Tracking and Notification System . . . . . . . . . . . . . . . . . . . . . . . . . 13
+4.7 Testing and Validation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+4.8 Deployment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+5 References 15
+i
+Chapter 1
+Introduction
+In India, a significant number of students face uncertainty and confusion while making academic and
+career decisions after completing Class 10 and Class 12. Despite the availability of adequate infras-
+tructure and qualified faculty in government degree colleges, enrollment in these institutions has been
+steadily declining. This challenge is not primarily due to issues related to quality, but rather due to
+limited awareness about the importance of higher education and the long-term career opportunities
+associated with different degree programs.
+A major concern lies in the absence of structured and personalized career guidance at the school
+level. Most students and their parents have limited understanding of subject streams such as Arts,
+Science, and Commerce, and the academic and professional pathways each stream enables. As a result,
+students often make uninformed decisions, choose unsuitable courses, or opt for short-term skill-based
+programs without considering long-term academic growth and career stability.
+Another critical issue is the limited access to reliable and consolidated information about nearby
+government colleges. Details regarding available degree programs, eligibility criteria, admission time-
+lines, facilities, and future prospects are often scattered across multiple sources or difficult to access,
+particularly for students from rural and economically weaker backgrounds. This lack of localized guid-
+ance contributes to confusion, higher dropout rates, and migration toward private institutions that may
+not always meet educational expectations.
+With advancements in digital technology and artificial intelligence, there is a growing opportunity to
+address these challenges through personalized digital guidance platforms. Such systems can assess stu-
+dent aptitude and interests, provide data-driven recommendations, and visually map academic courses
+to real-world career opportunities. These capabilities can significantly enhance clarity and confidence
+in academic decision-making.
+1
+The proposed project, titled“One-Stop Personalized Career & Education Advisor”, aims to
+develop a comprehensive digital platform that offers aptitude-based course recommendations, course-to-
+career mapping, nearby government college information, and admission timeline tracking. The platform
+is designed to support students, parents, and educators by delivering structured, localized, and person-
+alized career guidance.
+By integrating career awareness into the academic decision-making process, this project seeks to
+improve enrollment in government degree colleges, reduce student dropouts, and empower learners
+with clarity and confidence regarding their academic and professional futures. The proposed solution
+aligns with national education goals and supports the broader vision of using technology to create
+inclusive, informed, and sustainable education systems.
+2
+Chapter 2
+Problem Statement
+Students in India, particularly those completing Class 10 and Class 12, often face significant challenges
+in making informed academic and career decisions. Despite the availability of government degree
+colleges with adequate infrastructure and qualified faculty, enrollment in these institutions continues to
+decline. This issue primarily arises from limited awareness regarding the importance of graduation, the
+variety of available degree programs, and the long-term career opportunities associated with different
+academic streams.
+Career guidance for students is largely unstructured and inconsistent across schools and regions.
+Many students and parents have limited understanding of subject streams such as Arts, Science, and
+Commerce, and the academic as well as professional pathways enabled by each option. As a result,
+students frequently make uninformed choices, select unsuitable courses, or pursue short-term skill-based
+programs without considering long-term academic development and career stability.
+Another major concern is the absence of a centralized and accessible source of information regarding
+nearby government colleges. Information related to degree programs, eligibility criteria, admission
+timelines, cut-offs, facilities, and future prospects is often scattered across multiple platforms or difficult
+to access, particularly for students from rural and economically weaker backgrounds. This lack of clarity
+leads to confusion, higher dropout rates, and migration to private institutions that may not provide
+the expected educational outcomes.
+The significance of these challenges has been formally recognized at the national level through
+initiatives such as theSmart India Hackathon (SIH), which has identified the need for a unified
+digital career and education guidance platform to support students in making informed academic and
+career decisions aligned with government education objectives [1].
+Existing career counseling initiatives are mostly manual, limited in reach, and lack personalization.
+3
+Students often do not receive guidance tailored to their aptitude, interests, or regional educational
+opportunities. There is a clear need for a comprehensive digital guidance system that can assess
+student aptitude, map academic courses to career opportunities, provide localized college information,
+and deliver timely updates related to admissions and scholarships.
+The problem addressed in this project is to design and develop aOne-Stop Personalized Career
+& Education Advisorthat leverages digital technologies and data-driven recommendations to support
+students in making informed academic and career choices. The proposed system aims to bridge the
+gap between academic awareness and practical decision-making, particularly for students aspiring to
+pursue higher education through government institutions.
+2.1 Project Objectives
+The main objectives of the proposed project are as follows:
+•To develop a digital platform that provides structured and personalized career and education
+guidance for students.
+•To assess students’ aptitude, interests, and strengths through interactive quizzes and evaluations.
+•To recommend suitable subject streams and degree programs based on individual profiles.
+•To provide detailed mapping between degree courses and career opportunities, including jobs,
+government examinations, and higher education options.
+•To offer location-based information on nearby government colleges, including available programs,
+eligibility criteria, and facilities.
+•To track admission schedules, scholarship deadlines, and counseling timelines through notifica-
+tions.
+•To empower students to make informed academic decisions and reduce dropouts after Class 10
+and Class 12.
+2.2 Project Scope
+The scope of this project includes the design, development, and implementation of a mobile and web-
+based personalized career and education guidance platform. The system will provide aptitude-based
+4
+recommendations, course-to-career mappings, government college directories, and academic timeline
+tracking.
+The platform will support personalized user profiles to ensure recommendations are aligned with
+students’ interests, academic background, and regional context. It will be designed to be scalable,
+lightweight, and accessible, including support for users in areas with limited internet connectivity.
+The project focuses on guidance, awareness, and decision-support mechanisms and does not replace
+formal academic counseling bodies or educational authorities. Future enhancements may include artifi-
+cial intelligence-based predictive analytics, multilingual support, integration with government education
+portals, and advanced data visualization to further improve the accuracy and reach of career guidance.
+5
+Chapter 3
+Literature Survey
+Career guidance and educational decision-making have been widely researched due to their long-term
+impact on students’ academic success, employability, and socio-economic mobility. Studies indicate
+that early and structured career guidance helps students make informed academic choices and reduces
+dropouts after key transition points such as Class 10 and Class 12. However, access to such guidance
+remains uneven, particularly for students from government schools and rural backgrounds.
+With the growth of digital education technologies, several career guidance platforms have emerged.
+In India, theNational Career Service (NCS)portal provides employment-oriented guidance but
+offers limited personalized academic planning. Similarly, private platforms such asMindler,iDream-
+Career,CareerGuide.com, andUnivarietydemonstrate the effectiveness of aptitude-based recom-
+mendations but are often paid and focused on private institutions.
+Globally used platforms such asMy Next Move,Career Explorer, andIndeed Career Guide
+offer skill-based career exploration; however, they are not aligned with the Indian education system or
+government college structures. Learning platforms such asCoursera,edX,Udemy, andSWAYAM
+focus on content delivery rather than academic decision guidance.
+Reports by organizations such asUNESCO, theWorld Bank, and theOECDemphasize the need
+for structured, personalized, and technology-enabled career guidance integrated into formal education
+systems.
+3.1 User Survey Analysis (Google Form Responses)
+To complement the literature review, a primary user survey was conducted using a Google Form to
+understand student needs, challenges, and expectations regarding career and education planning [6].
+6
+The survey results provide strong empirical support for the proposed system.
+Figure 3.1: Perceived need for a unified career and education guidance platform
+The survey indicates a strong demand for a centralized solution, with an average rating of8.6 out
+of 10for the need for a unified platform to manage career and education decisions.
+Most respondents identifiedAI-driven career path recommendationsas the most critical fea-
+ture, followed by progress tracking tools and access to verified institutional and job data.
+The most common frustrations reported include lack of progress, difficulty in finding reliable infor-
+mation, and repeated rework caused by unclear guidance.
+Respondents showed high interest in curated course recommendations, real-time job market insights,
+and mentorship matching features.
+A majority of respondents rely on online job portals, AI-powered tools, and informal sources such
+as family and friends, indicating the lack of a trusted centralized platform.
+Most respondents reported moderate to high difficulty in gathering reliable information about career
+paths and educational programs.
+The survey shows that students are actively exploring options or planning next steps, reinforcing
+the importance of timely and structured guidance.
+7
+Figure 3.2: Preferred core features of a one-stop personalized advisor
+Overall, the survey findings align strongly with existing research and clearly justify the need for
+a comprehensive, personalized, and accessible career guidance platform. The proposedOne-Stop
+Personalized Career & Education Advisordirectly addresses these gaps by integrating aptitude
+assessment, career mapping, government college discovery, and academic timeline tracking within a
+single system.
+8
+Figure 3.3: Most frustrating aspects of current career planning processes
+Figure 3.4: Likelihood of using features of a one-stop personalized advisor
+9
+Figure 3.5: Current sources used for career and education advice
+Figure 3.6: Difficulty level in gathering career and education information
+Figure 3.7: Current relationship of students with career and education planning
+10
+Chapter 4
+Methodology
+The methodology outlines the systematic approach adopted to design and develop theOne-Stop
+Personalized Career & Education Advisor. The project is implemented in multiple phases to
+ensure accuracy, scalability, usability, and effectiveness in guiding students toward informed academic
+and career decisions. The overall approach follows best practices recommended for technology-driven
+educational guidance systems [2].
+4.1 Requirement Analysis
+In this phase, the functional and non-functional requirements of the system are identified by analyzing
+existing challenges faced by students after Class 10 and Class 12. The focus is on understanding student
+confusion regarding subject stream selection, availability of degree programs in government colleges,
+career outcomes, and admission timelines.
+Inputs are gathered through the study of education policies, government college admission processes,
+and existing career guidance practices. National-level initiatives and education frameworks emphasize
+the need for structured and personalized guidance systems to support informed decision-making [1].
+User roles such as students, parents, teachers, and administrators are defined, along with their interac-
+tions with the system. Key requirements include aptitude assessment, personalized recommendations,
+localized college information, and notification-based guidance.
+11
+4.2 System Design
+The system is designed as a modular digital platform with a layered architecture consisting of a user
+interface layer, application logic layer, and data management layer. The user interface is designed to be
+simple and accessible through both web and mobile platforms to ensure ease of use for students from
+diverse backgrounds.
+The application layer handles aptitude assessments, recommendation logic, course-to-career map-
+ping, and timeline tracking. The backend data layer stores user profiles, assessment results, college
+information, course details, and career pathways. Secure APIs are used to enable data retrieval, per-
+sonalization, and future integration with external educational portals, as recommended in modern
+digital education systems [3].
+4.3 Content and Data Preparation
+Educational content related to academic streams, degree programs, career opportunities, government
+examinations, and higher education pathways is collected from verified educational and government
+sources. The content is categorized into streams, courses, career outcomes, and eligibility requirements
+to ensure clarity and consistency.
+Location-based data on government colleges, including available programs, facilities, eligibility crite-
+ria, and admission timelines, is organized and structured. This data is standardized to ensure accuracy
+across recommendations and visual mappings, addressing gaps identified in existing career guidance
+platforms.
+4.4 Aptitude Assessment and Recommendation Development
+Aptitude and interest-based assessments are designed using short quizzes to evaluate students’ strengths,
+preferences, and personality traits. Such assessment-based guidance approaches have been shown to
+improve academic alignment and reduce indecision among students [4].
+Recommendation logic is implemented to match student profiles with suitable academic paths and
+career options. Comparative views are provided to allow students to explore multiple stream and course
+combinations and understand their long-term implications.
+12
+4.5 Course-to-Career Mapping and Visualization
+Course-to-career mapping modules are developed to visually represent the relationship between de-
+gree programs and career opportunities. These mappings include information on industries, job roles,
+government exams, higher studies, and entrepreneurial options associated with each course.
+Interactive charts and structured pathways help students clearly understand how academic choices
+translate into real-world career outcomes. Visual representations are used to simplify complex infor-
+mation and enhance decision-making clarity.
+4.6 Timeline Tracking and Notification System
+A timeline tracking module is implemented to manage important academic events such as admission
+dates, entrance examinations, counseling schedules, and scholarship deadlines. Personalized notifica-
+tions are generated based on user profiles and selected preferences.
+This feature ensures that students remain informed and do not miss critical opportunities due to
+lack of awareness or delayed information, which is a commonly identified issue in higher education
+access [1].
+4.7 Testing and Validation
+The system undergoes comprehensive testing to evaluate functionality, accuracy of recommendations,
+usability, and performance. Test cases are executed across different user roles to validate assessment
+results, recommendation outputs, and data retrieval.
+User feedback is collected during testing phases to refine the assessment logic, improve content
+clarity, and enhance the overall user experience. The objective is to ensure reliable guidance and ease
+of navigation.
+4.8 Deployment
+The finalized platform is deployed using a scalable cloud-based infrastructure to ensure availability and
+performance. Role-based authentication and data security measures are implemented to protect user
+information.
+13
+Regular updates to educational content, college data, and system features are planned to maintain
+relevance and accuracy. The deployed system enables continuous guidance and supports students
+throughout their academic decision-making journey.
+14
+Chapter 5
+References
+The following references have been consulted during the preparation of this project and the study of
+career guidance systems, educational policies, digital learning platforms, and technology-driven decision
+support systems:
+1. Ministry of Education, Government of India, “National Education Policy (NEP) 2020,” Sections 4
+(School Education) and 16 (Higher Education). Available at:https://www.education.gov.in.
+2. Smart India Hackathon (SIH), Government of India, “Problem Statement: One-Stop Personalized
+Career & Education Advisor,” Smart Education Theme, Ministry of Education. Available at:
+https://www.sih.gov.in.
+3. University Grants Commission (UGC), India, “Guidelines for Higher Education and Degree Pro-
+grams,” Relevant sections on undergraduate programs and curriculum framework. Available at:
+https://www.ugc.ac.in.
+4. All India Council for Technical Education (AICTE), “Approval Process Handbook and Career
+Guidance Initiatives,” Chapters 1 and 2, pp. 12–28. Available at:https://www.aicte-india.
+org.
+5. National Career Service (NCS), Ministry of Labour and Employment, Government of India, “Ca-
+reer Guidance and Employment Services,” User guidelines and portal features section. Available
+at:https://www.ncs.gov.in.
+6. UNESCO, “Career Guidance for Youth: Bridging Education and Employment,” Chapters 2 and
+3, pp. 21–45. Available at:https://www.unesco.org.
+15
+7. World Bank, “Education, Skills Development, and Employability,” Education and skills develop-
+ment overview sections, pp. 30–52. Available at:https://www.worldbank.org.
+8. OECD, “Career Guidance and Public Policy: Bridging the Gap,” Chapters 4 and 5, pp. 67–98.
+Available at:https://www.oecd.org.
+9. J. Athanasou and R. Van Esbroeck,International Handbook of Career Guidance, Springer Publi-
+cations, 2nd Edition, pp. 101–145.
+10. R. K. Singh and A. Sharma, “Impact of Digital Career Guidance Systems on Student Decision-
+Making,”International Journal of Educational Technology in Higher Education, Springer, Vol.
+15, No. 3, pp. 1–14, 2018.
+11. Google for Education, “Digital Tools for Personalized Learning,” Product documentation and
+learning tools overview section. Available at:https://edu.google.com.
+12. Primary Survey Data, “Google Form Responses on Career and Education Planning,” Conducted
+as part of this project, 2025.
+16
