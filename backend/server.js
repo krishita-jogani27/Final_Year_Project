@@ -31,6 +31,7 @@ app.use('/api/recommendations', require('./routes/recommendations'));
 app.use('/api/career', require('./routes/career'));
 app.use('/api/colleges', require('./routes/colleges'));
 app.use('/api/notifications', require('./routes/notifications'));
+app.use('/api/timeline', require('./routes/timeline'));
 
 // Health check route
 app.get('/api/health', (req, res) => {
@@ -55,6 +56,7 @@ app.get('/', (req, res) => {
             career: '/api/career',
             colleges: '/api/colleges',
             notifications: '/api/notifications',
+            timeline: '/api/timeline',
             health: '/api/health'
         }
     });

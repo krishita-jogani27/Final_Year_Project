@@ -104,11 +104,8 @@ const AptitudeResults = () => {
 
                 {!recommendations && !loadingAI && (
                     <div className="result-actions" style={{ display: 'flex', gap: '15px', justifyContent: 'center', marginTop: '30px' }}>
-                        <button className="btn-secondary" onClick={() => navigate('/dashboard')}>
-                            Go to Dashboard
-                        </button>
                         <button className="btn-primary" onClick={() => navigate('/career-advisor')}>
-                            View Personalized Career Roadmap
+                            Next: Generate Career Suggestions
                         </button>
                         <button className="btn-secondary" onClick={handleGetRecommendations} style={{ fontSize: '0.9rem' }}>
                             Ask AI Instead
@@ -118,8 +115,8 @@ const AptitudeResults = () => {
 
                 {recommendations && !loadingAI && (
                     <div className="result-actions" style={{ display: 'flex', gap: '15px', justifyContent: 'center', marginTop: '30px' }}>
-                        <button className="btn-secondary" onClick={() => navigate('/dashboard')}>
-                            Finish & Return to Dashboard
+                        <button className="btn-primary" onClick={() => navigate('/career-advisor')}>
+                            Next: View Career Roadmap
                         </button>
                     </div>
                 )}

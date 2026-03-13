@@ -135,8 +135,9 @@ const CareerAdvisor = () => {
             </div>
 
             <div className="advisor-footer">
-                <button className="btn-secondary" onClick={() => navigate('/dashboard')}>Return to Dashboard</button>
-                <button className="btn-primary" onClick={() => navigate('/courses')}>Explore Relevant Courses</button>
+                <button className="btn-primary" onClick={() => navigate('/colleges')}>
+                    Next: Show Colleges & Courses
+                </button>
             </div>
         </div>
     );

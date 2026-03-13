@@ -13,6 +13,7 @@ import AptitudeTest from './pages/AptitudeTest';
 import AptitudeResults from './pages/AptitudeResults';
 import CareerAdvisor from './pages/CareerAdvisor';
 import CollegeDirectory from './pages/CollegeDirectory';
+import Timeline from './pages/Timeline';
 import './App.css';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
                         <Route path="/aptitude-results" element={<AptitudeResults />} />
                         <Route path="/career-advisor" element={<CareerAdvisor />} />
                         <Route path="/colleges" element={<CollegeDirectory />} />
+                        <Route path="/timeline" element={<Timeline />} />
                     </Routes>
                     <Toaster
                         position="top-right"

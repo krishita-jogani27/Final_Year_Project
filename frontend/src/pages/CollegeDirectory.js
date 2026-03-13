@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import './CollegeDirectory.css';
 
@@ -17,6 +18,7 @@ const DEGREES = [
 
 const CollegeDirectory = () => {
     const { isAuthenticated } = useAuth();
+    const navigate = useNavigate();
 
     // Filter States
     const [stateFilter, setStateFilter] = useState('');
@@ -174,10 +176,21 @@ const CollegeDirectory = () => {
                                                     🎓 {college.degree_name}
                                                 </span>
                                             )}
+                                            {college.admission_deadline && (
+                                                <span className="meta-item deadline" style={{ color: '#ef4444', fontWeight: '600' }}>
+                                                    ⏳ Deadline: {new Date(college.admission_deadline).toLocaleDateString()}
+                                                </span>
+                                            )}
                                         </div>
+
+                                        {college.eligibility_criteria && (
+                                            <div className="college-eligibility" style={{ marginTop: '15px', padding: '10px', background: '#f8fafc', borderRadius: '8px', fontSize: '0.9rem', color: '#475569', borderLeft: '3px solid #3b82f6' }}>
+                                                <strong>Eligibility:</strong> {college.eligibility_criteria}
+                                            </div>
+                                        )}
                                     </div>
 
-                                    <div className="college-footer">
+                                    <div className="college-footer" style={{ marginTop: '20px' }}>
                                         <a
                                             href={`https://www.google.com/search?q=${encodeURIComponent(college.name + ' admissions')}`}
                                             target="_blank"
@@ -197,6 +210,16 @@ const CollegeDirectory = () => {
                         )}
                     </div>
                 )}
+            </div>
+
+            <div className="filter-card" style={{ marginTop: '30px', textAlign: 'center' }}>
+                <button 
+                    className="btn-primary" 
+                    style={{ padding: '15px 40px', fontSize: '1.2rem', borderRadius: '30px' }}
+                    onClick={() => navigate('/timeline')}
+                >
+                    Next: Track Admission Timeline
+                </button>
             </div>
         </div>
     );

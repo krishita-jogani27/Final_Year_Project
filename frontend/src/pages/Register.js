@@ -9,11 +9,12 @@ const Register = () => {
     const navigate = useNavigate();
     const { login, isAuthenticated } = useAuth();
 
-    const [formData, setFormData] = useState({
+        const [formData, setFormData] = useState({
         username: '',
         email: '',
         password: '',
-        full_name: ''
+        full_name: '',
+        education_level: '12th'
     });
 
     const [validation, setValidation] = useState({
@@ -134,7 +135,7 @@ const Register = () => {
             if (response.data.success) {
                 toast.success('🎉 Registration successful! Welcome aboard!');
                 login(response.data.data, response.data.data.token);
-                navigate('/dashboard');
+                navigate('/aptitude-test');
             }
         } catch (error) {
             const message = error.response?.data?.message || 'Registration failed';
@@ -183,6 +184,22 @@ const Register = () => {
                                 required
                                 minLength="2"
                             />
+                        </div>
+
+                        <div className="form-group" style={{ marginBottom: '1.5rem' }}>
+                            <label>Current Education Level</label>
+                            <select 
+                                name="education_level" 
+                                value={formData.education_level} 
+                                onChange={handleChange}
+                                className="styled-select"
+                                required
+                                style={{ width: '100%', padding: '0.75rem', border: '1px solid #e2e8f0', borderRadius: '8px', fontSize: '1rem', color: '#1e293b' }}
+                            >
+                                <option value="10th">10th Standard / High School</option>
+                                <option value="12th">12th Standard / Pre-University</option>
+                                <option value="Graduate">College Graduate</option>
+                            </select>
                         </div>
 
                         <div className="form-group">

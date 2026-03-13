@@ -1,0 +1,214 @@
+.timeline-page-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.timeline-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.timeline-header h1 {
+    color: #1e293b;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.timeline-header p {
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+.timeline-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.timeline-split-view {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.roadmap-section, .notifications-section {
+    flex: 1;
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.roadmap-section h2, .notifications-section h2 {
+    color: #334155;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #475569;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px dashed #cbd5e1;
+}
+
+.empty-state a {
+    color: #4f46e5;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.roadmap-meta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.meta-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.meta-badge.strength {
+    background: #e0e7ff;
+    color: #4338ca;
+}
+
+.meta-badge.degree {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.career-track {
+    margin-bottom: 40px;
+}
+
+.track-title {
+    color: #1e293b;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    background: #f1f5f9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #4f46e5;
+}
+
+.timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.timeline-list::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #cbd5e1;
+}
+
+.timeline-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 3px solid #f8fafc;
+    z-index: 10;
+}
+
+.bg-green { background: #10b981; }
+
+.badge-admission { background: #ef4444; color: white !important; }
+.badge-scholarship { background: #f59e0b; color: white !important; }
+.badge-counseling { background: #10b981; color: white !important; }
+.badge-general { background: #3b82f6; color: white !important; }
+
+.notif-type-tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+}
+
+.timeline-details {
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    flex: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.step-title {
+    color: #0f172a;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.timeline-message {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.timeline-date {
+    display: inline-block;
+    color: #64748b;
+    font-size: 0.85rem;
+    background: #f1f5f9;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.timeline-footer {
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 30px;
+}
+
+.btn-large {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .timeline-split-view {
+        flex-direction: column;
+    }
+}
